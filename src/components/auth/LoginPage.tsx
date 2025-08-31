@@ -71,12 +71,12 @@ const LoginPage = () => {
             ))
           }
           <input
-            type="email"
-            placeholder="Email"
-            {...register("email", { required: true })}
+            type="text"
+            placeholder="Username"
+            {...register("username", { required: true })}
             className="bg-transparent border-2 border-[#E6E6E6] text-[#E6E6E6] placeholder-[#E6E6E688] rounded px-4 py-2 font-mono focus:outline-none focus:border-[#757575] transition-all duration-300"
           />
-          {errors.email && <span className="text-red-500 mt-[-12px]">Email is required</span>}
+          {errors.username && <span className="text-red-500 mt-[-12px]">Username is required</span>}
 
           <input
             type="password"
